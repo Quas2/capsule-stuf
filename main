@@ -1,0 +1,12 @@
+class person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class pubPerson(person):
+    def show_age(self):
+        print("Age:", self.age)
+
+emp = pubPerson("Ross", 30)
+print(emp.name)
+emp.show_age()
